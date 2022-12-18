@@ -49,7 +49,7 @@ onMounted(() => {
         <Gallery :defaultImage="defaultImage" :galleries="item.galleries"/>
         <GalleryDescription :desc="item.description"/>
       </main>
-      <SideGallery :figma="item.is_figma" :sketch="item.is_sketch" :features="features" />
+      <SideGallery :figma="item.is_figma" :sketch="item.is_sketch" :features="features" :item="item" />
     </div>
   </div>
 </template>

@@ -7,6 +7,13 @@ const price = ref([
     '2,000',
     'month'
 ])
+const priceGold = ref([
+    'IDR',
+    '9,000',
+    'month'
+])
+const priceCheckout = ref(2000);
+const priceCheckoutGold = ref(9000);
 const titlePlan = ref('Basic Plan')
 const goldPlan = ref('Gold Plan')
 const descPlan = ref('Suitable for new team')
@@ -49,8 +56,8 @@ const goldPrice = ref([
           </div>
           <div class="w-full p-5 mx-auto mb-10 md:max-w-4xl">
             <div class="grid grid-cols-1 gap-12 md:grid-cols-2">
-              <PriceCard :price="price" :title-plan="titlePlan" :desc-plan="descPlan" :list-price="basicPrice" />
-              <PriceCard :price="price" :title-plan="goldPlan" :desc-plan="descGold" :list-price="goldPrice" />
+              <PriceCard :price="price" :title-plan="titlePlan" :desc-plan="descPlan" :list-price="basicPrice" :price-checkout="priceCheckout"/>
+              <PriceCard :price="priceGold" :title-plan="goldPlan" :desc-plan="descGold" :list-price="goldPrice" :price-checkout="priceCheckoutGold" />
             </div>
           </div>
           <div class="w-full p-5 mx-auto mb-10 md:max-w-7xl">

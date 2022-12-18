@@ -1,9 +1,14 @@
 <script setup>
+import { computed } from "vue";
+import { useUserStore } from "@/stores/user";
 const props = defineProps({
   figma: Number,
   sketch: Number,
   features: Array,
+  item: Object
 });
+const userStore = useUserStore();
+const user = computed(() => userStore.getUser);
 </script>
 
 <template>
@@ -16,7 +21,7 @@ const props = defineProps({
               <img src="@/assets/img/icon-figma.png" alt="" class="w-16" />
             </div>
             <div class="block mt-1 ml-4">
-              <h3 class="font-semibold text-md">Figma</h3>
+              <h3 class="font-semibold text-md">Figma {{user.subscription}}</h3>
               <p class="text-gray-400 text-md">Project Included</p>
             </div>
           </div>
@@ -41,9 +46,30 @@ const props = defineProps({
             </li>
           </ul>
         </div>
-        <RouterLink to="/pricing"
+        <!-- <div v-if="user"> -->
+          <a v-if="user.subscription !== undefined && user.subscription.length > 0" :href="item.file" class="
+                    inline-flex
+                    items-center
+                    justify-center
+                    w-full
+                    px-8
+                    py-3
+                    text-base
+                    font-medium
+                    text-white
+                    bg-indigo-600
+                    border border-transparent
+                    rounded-full
+                    hover:bg-indigo-700
+                    md:py-2 md:text-md md:px-10
+                    hover:shadow
+                  ">
+            Download Now
+          </a>
+        <!-- </div> -->
+        <RouterLink to="/pricing" v-else
           class="inline-flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-full hover:bg-indigo-700 md:py-2 md:text-md md:px-10 hover:shadow">
-          Download Now
+          Subscribe
         </RouterLink>
       </div>
     </div>
