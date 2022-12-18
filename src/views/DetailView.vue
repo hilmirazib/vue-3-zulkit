@@ -1,8 +1,8 @@
 <script setup>
-import Gallery from '../components/detail/Gallery.vue';
-import GalleryDescription from '../components/detail/GalleryDescription.vue';
-import SideGallery from '../components/detail/SideGallery.vue'
-import { ref } from '@vue/reactivity';
+import Gallery from "@/components/detail/Gallery.vue";
+import GalleryDescription from "@/components/detail/GalleryDescription.vue";
+import SideGallery from "@/components/detail/SideGallery.vue"
+import { ref } from "@vue/reactivity";
 import { onMounted, computed } from "vue";
 import axios from "axios";
 import { useRoute } from 'vue-router';

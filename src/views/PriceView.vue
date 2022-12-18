@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue';
-import FeatureList from '../components/authentication/FeatureList.vue';
-import PriceCard from '../components/pricing/PriceCard.vue';
+import FeatureList from "@/components/authentication/FeatureList.vue";
+import PriceCard from "@/components/pricing/PriceCard.vue";
 const price = ref([
     'IDR',
     '2,000',

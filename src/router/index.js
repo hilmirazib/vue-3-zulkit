@@ -1,12 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-import LoginView from '../views/LoginView.vue'
-import RegisterView from '../views/RegisterView.vue'
-import DetailView from '../views/DetailView.vue'
-import CategoryItems from '../views/CategoryItems.vue'
-import PriceView from '../views/PriceView.vue'
-import SuccessView from '../views/SuccessView.vue'
-import CategoriesView from '../views/CategoriesView.vue'
+import HomeView from "@/views/HomeView.vue"
+import LoginView from "@/views/LoginView.vue"
+import RegisterView from "@/views/RegisterView.vue"
+import DetailView from "@/views/DetailView.vue"
+import CategoryItems from "@/views/CategoryItems.vue"
+import PriceView from "@/views/PriceView.vue"
+import SuccessView from "@/views/SuccessView.vue"
+import CategoriesView from "@/views/CategoriesView.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),

@@ -1,7 +1,7 @@
 <script setup>
-import IconBadge from '../icons/iconBadge.vue';
-import IconBook from '../icons/iconBook.vue';
-import IconLayer from '../icons/IconLayer.vue';
+import IconBadge from "@/components/icons/iconBadge.vue";
+import IconBook from "@/components/icons/iconBook.vue";
+import IconLayer from "@/components/icons/IconLayer.vue";
 </script>
 
 <template>
