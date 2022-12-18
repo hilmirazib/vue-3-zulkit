@@ -1,7 +1,7 @@
 <script setup>
-import Gallery from "@/components/detail/Gallery.vue";
-import GalleryDescription from "@/components/detail/GalleryDescription.vue";
-import SideGallery from "@/components/detail/SideGallery.vue"
+import Gallery from "@/Components/detail/Gallery.vue";
+import GalleryDescription from "@/Components/detail/GalleryDescription.vue";
+import SideGallery from "@/Components/detail/SideGallery.vue"
 import { ref } from "@vue/reactivity";
 import { onMounted, computed } from "vue";
 import axios from "axios";
